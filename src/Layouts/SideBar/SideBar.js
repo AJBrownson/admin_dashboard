@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { SideWrapper, Logo, LogoIcon, Menu, MenuItem } from './SideBar.styles'
 import { SideBarData } from '../../Data/Data'
 
 
 const SideBar = () => {
 
-    const [ selected, setSelected ] = useState(0)
+    // const [ selected, setSelected ] = useState(0)
 
 
     return (
@@ -17,17 +17,16 @@ const SideBar = () => {
                 </Logo>
 
                 <Menu>
-                    {SideBarData.map((item, index)) => {
-                            return (
-                                <MenuItem = {selected === index ? 'MenuItem active' : 'MenuItem' }
-                                key={index}
-                                onClick = { () => setSelected(index) }
-                                >
-                                    <item.icon />
-                                    <item.heading />
-                                </MenuItem>
-                            );
-                        }
+                    {SideBarData.map((item, index) =>{
+                        return(
+                            <MenuItem>
+                                <item.icon />
+                                <span>
+                                    {item.heading}
+                                </span>
+                            </MenuItem>
+                        )
+                    })}
                 </Menu>
             </SideWrapper>
         </>
