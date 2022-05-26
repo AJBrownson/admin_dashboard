@@ -1,4 +1,4 @@
-import { FaHome, FaRegClipboard, FaUsers, FaChartArea, FaSignOutAlt } from 'react-icons/fa'
+import { FaHome, FaRegClipboard, FaUsers, FaChartArea } from 'react-icons/fa'
 import { FiPackage } from 'react-icons/fi'
 
 

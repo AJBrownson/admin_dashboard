@@ -1,11 +1,9 @@
 import React from 'react'
 import { SideWrapper, Logo, LogoIcon, Menu, MenuItem } from './SideBar.styles'
-import { SideBarData } from '../../Data/Data'
-
+import { SideBarData } from '../../Utils/Data'
+import { FaSignOutAlt } from 'react-icons/fa'
 
 const SideBar = () => {
-
-    // const [ selected, setSelected ] = useState(0)
 
 
     return (
@@ -27,6 +25,10 @@ const SideBar = () => {
                             </MenuItem>
                         )
                     })}
+
+                    <MenuItem>
+                        <FaSignOutAlt />
+                    </MenuItem>
                 </Menu>
             </SideWrapper>
         </>

@@ -18,9 +18,8 @@ color: black;
 justify-self: flex-start;
 text-decoration: none;
 font-size: 2rem;
-font-weight: 600;
+font-weight: 700;
 display: flex;
-// align-items: center;
 
 & > span {
     color: #A770EF;
@@ -51,4 +50,24 @@ position: relative;
 transition: all 300ms ease;
 border-radius: 0.7rem;
 font-size: 14px;
+cursor: pointer;
+
+&:hover {
+    background: pink;
+    margin-left: 0;
+}
+
+&::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: pink;
+    margin-right: calc(1rem - 8px);
+}
+
+&:last-child {
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
+}
 `;
