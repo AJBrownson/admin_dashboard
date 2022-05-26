@@ -1,6 +1,9 @@
 import React from 'react'
 import { MainWrapper, GlassWrapper } from './Home.styles'
 import SideBar from '../../Layouts/SideBar/SideBar'
+import MainDash from '../../Layouts/MainDash/MainDash'
+
+
 
 const Home = () => {
   return (
@@ -8,6 +11,7 @@ const Home = () => {
       <MainWrapper>
         <GlassWrapper>
           <SideBar />
+          <MainDash />
         </GlassWrapper>
       </MainWrapper>
     </>
