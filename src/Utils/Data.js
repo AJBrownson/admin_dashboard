@@ -34,6 +34,8 @@ export const SideBarData = [
 ]
 
 
+
+
 export const CardsData = [
     {
         title: "Sales",
@@ -44,12 +46,12 @@ export const CardsData = [
         barValue: 70,
         value: "25,970",
         png: FaDollarSign,
-        // series: [
-        //   {
-        //     name: "Sales",
-        //     data: [31, 40, 28, 51, 42, 109, 100],
-        //   },
-        // ],
+        series: [
+          {
+            name: "Sales",
+            data: [55, 40, 75, 88, 62, 100, 150],
+          },
+        ],
       },
       {
         title: "Revenue",
@@ -60,12 +62,12 @@ export const CardsData = [
         barValue: 70,
         value: "25,970",
         png: FaMoneyBill,
-        // series: [
-        //   {
-        //     name: "Revenue",
-        //     data: [31, 40, 28, 51, 42, 109, 100],
-        //   },
-        // ],
+        series: [
+          {
+            name: "Revenue",
+            data: [31, 40, 28, 51, 42, 109, 100],
+          },
+        ],
       },
       {
         title: "Expenses",
@@ -76,12 +78,12 @@ export const CardsData = [
         barValue: 70,
         value: "25,970",
         png: FaRegClipboard,
-        // series: [
-        //   {
-        //     name: "Expenses",
-        //     data: [31, 40, 28, 51, 42, 109, 100],
-        //   },
-        // ],
+        series: [
+          {
+            name: "Expenses",
+            data: [31, 40, 28, 51, 42, 109, 100],
+          },
+        ],
       },
 
 ]
